@@ -84,67 +84,18 @@ class kb():
             sim = self.jaccard_similarity(set1,set2)
             simlist.append(sim)
             if sim >= 0.5:
-                print("----------------------")
-                pprint(vdata)
-                print("<><><><><><><><><><><><><><><><><><><><><><><>")
-                pprint(v)
-                print("----------------------")
-                print(set1)
-                print("<><><><><><><><><><><><><><><><><><><><><><><>")
-                print(set2)
+                # print("----------------------")
+                # pprint(vdata)
+                # print("<><><><><><><><><><><><><><><><><><><><><><><>")
+                # pprint(v)
+                # print("----------------------")
+                # print(set1)
+                # print("<><><><><><><><><><><><><><><><><><><><><><><>")
+                # print(set2)
                 res.append(v)
-        print(len(simlist),max(simlist))        
+        #print(len(simlist),max(simlist))        
         return res
                 
-KB = kb() 
-vcount = len(nimble_vendors_list)   
-          
-count = 0 
-# for i in range(2500,5000):     
-#     v = nimble_vendors_list[i]
-#     requestlist =  ["name","address1","city","state","zipCode","country"]
-#     vdata = {}
-#     for field in requestlist:
-#        if v[field] is None or v[field] == "":
-#            continue
-#        vdata.update({field:v[field]})
-#     pprint(vdata)
-#     KB.find_matching_kbv(vdata)
-#     count += 1
-#     if count > 1000:
-#         break
-
-   
-# for i in range(vcount):
-#     v = nimble_vendors_list[i]
-#     vall = 0
-#     for key,val in v.items():
-#         if val != "":
-#             vall += 1
-#     if vall >= 4:
-#         print(i)
-#         break
-    
-           
-            
-            
-        
-            
-            
-            
-            
-            
-            
-        
-                
-
-
-
-
-
-
-
-
 
 # for v in tqdm(kb_vendors_list):
 #     # print(v.keys())
